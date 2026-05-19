@@ -61,7 +61,6 @@ moneyManager.sendMoneyCallback = (data) => {
 };
 
 ApiConnector.getFavorites((response) => {
-  console.log(response);
   if (response.success) {
     favoritesWidget.clearTable();
     favoritesWidget.fillTable(response.data);
@@ -71,28 +70,26 @@ ApiConnector.getFavorites((response) => {
 
 favoritesWidget.addUserCallback = (data) => {
   ApiConnector.addUserToFavorites(data, (response) => {
-    console.log(response);
     if (response.success) {
       favoritesWidget.clearTable();
       favoritesWidget.fillTable(response.data);
       moneyManager.updateUsersList(response.data);
-      moneyManager.setMessage(true, 'Пользователь добавлен успешно');
+      favoritesWidget.setMessage(true, 'Пользователь добавлен успешно');
     } else {
-      moneyManager.setMessage(false, response.error);
+      favoritesWidget.setMessage(false, response.error);
     }
   });
 };
 
 favoritesWidget.removeUserCallback = (id) => {
   ApiConnector.removeUserFromFavorites(id, (response) => {
-    console.log(response);
     if (response.success) {
       favoritesWidget.clearTable();
       favoritesWidget.fillTable(response.data);
       moneyManager.updateUsersList(response.data);
       moneyManager.setMessage(true, 'Пользователь удален успешно');
     } else {
-      moneyManager.setMessage(false, response.error);
+      favoritesWidget.setMessage(false, response.error);
     }
   });
 };

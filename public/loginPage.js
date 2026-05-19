@@ -3,7 +3,7 @@
 const userForm = new UserForm();
 
 userForm.loginFormCallback = function (data) {
-  const result = ApiConnector.login(data, function (result) {
+  ApiConnector.login(data, function (result) {
     if (result.success) {
       location.reload();
       return;
@@ -13,7 +13,7 @@ userForm.loginFormCallback = function (data) {
 };
 
 userForm.registerFormCallback = function (data) {
-  const result = ApiConnector.register(data, function (result) {
+  ApiConnector.register(data, function (result) {
     if (result.success) {
       location.reload();
       return;
