@@ -147,37 +147,38 @@ Ctrl + C
 
 ```mermaid
 flowchart TD
-    classDef page fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1
-    classDef mycode fill:#fff8e1,stroke:#f9a825,color:#5d4037
-    classDef ready fill:#f3e5f5,stroke:#8e24aa,color:#4a148c
-    classDef server fill:#e8f5e9,stroke:#43a047,color:#1b5e20
-    classDef data fill:#eceff1,stroke:#607d8b,color:#263238
+    classDef rootNode fill:#f8fafc,stroke:#334155,color:#0f172a
+    classDef page fill:#bfdbfe,stroke:#1d4ed8,color:#1e3a8a
+    classDef mycode fill:#fef3c7,stroke:#f59e0b,color:#78350f
+    classDef ready fill:#ffe4e6,stroke:#e11d48,color:#881337
+    classDef server fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef data fill:#e5e7eb,stroke:#374151,color:#111827
 
-    root["bjs-diplom"]
+    root["bjs-diplom"]:::rootNode
 
-    root --> public["public/"]
-    root --> routes["routes/"]
-    root --> index["index.js"]
-    root --> db["db.json"]
+    root --> public["public/"]:::rootNode
+    root --> routes["routes/"]:::server
+    root --> index["index.js"]:::server
+    root --> db["db.json"]:::data
 
-    public --> pages["HTML-страницы"]
-    public --> scripts["JS-логика страниц"]
-    public --> api["api/"]
-    public --> styles["css/ и semantic/"]
+    public --> pages["HTML-страницы"]:::page
+    public --> scripts["JS-логика страниц"]:::mycode
+    public --> api["api/"]:::ready
+    public --> styles["css/ и semantic/"]:::ready
 
-    pages --> loginHtml["login.html<br>страница входа"]
-    pages --> homeHtml["home.html<br>личный кабинет"]
+    pages --> loginHtml["login.html<br>страница входа"]:::page
+    pages --> homeHtml["home.html<br>личный кабинет"]:::page
 
-    scripts --> loginJs["loginPage.js<br>логика входа и регистрации"]
-    scripts --> homeJs["homePage.js<br>логика личного кабинета"]
+    scripts --> loginJs["loginPage.js<br>логика входа и регистрации"]:::mycode
+    scripts --> homeJs["homePage.js<br>логика личного кабинета"]:::mycode
 
-    api --> apiConnector["ApiConnector.js<br>запросы к API"]
-    api --> uiClasses["UI-классы<br>UserForm / MoneyManager / ProfileWidget<br>FavoritesWidget / RatesBoard / LogoutButton"]
+    api --> apiConnector["ApiConnector.js<br>запросы к API"]:::ready
+    api --> uiClasses["UI-классы<br>UserForm / MoneyManager / ProfileWidget<br>FavoritesWidget / RatesBoard / LogoutButton"]:::ready
 
-    routes --> userRoute["user.js<br>пользователь"]
-    routes --> moneyRoute["money.js<br>баланс и переводы"]
-    routes --> favoritesRoute["favorites.js<br>избранное"]
-    routes --> stocksRoute["stocks.js<br>курсы валют"]
+    routes --> userRoute["user.js<br>пользователь"]:::server
+    routes --> moneyRoute["money.js<br>баланс и переводы"]:::server
+    routes --> favoritesRoute["favorites.js<br>избранное"]:::server
+    routes --> stocksRoute["stocks.js<br>курсы валют"]:::server
 
     index --> routes
     routes --> db
@@ -192,11 +193,7 @@ flowchart TD
 
     apiConnector --> routes
 
-    class loginHtml,homeHtml,page page
-    class loginJs,homeJs mycode
-    class apiConnector,uiClasses,styles ready
-    class routes,index,userRoute,moneyRoute,favoritesRoute,stocksRoute server
-    class db data
+    linkStyle default stroke:#64748b,stroke-width:2px
 ```
 
 <br>
