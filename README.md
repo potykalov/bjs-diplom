@@ -5,10 +5,10 @@
   <a href = "mailto:dmitriy.potykalov@gmail.com">
     <img src="https://img.shields.io/badge/gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail Badge"/>
   </a>
-  <a src = "https://t.me/dmitriy_potykalov">
+  <a href = "https://t.me/dmitriy_potykalov">
     <img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/>
   </a>
-  <a src = "https://www.linkedin.com/in/potykalov">
+  <a href = "https://www.linkedin.com/in/potykalov">
     <img src="https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </div>
@@ -204,13 +204,13 @@ Frontend-разработчик
 <br>
 
 <div id="badges" align = "center">
-  <a src = "https://github.com/potykalov">
+  <a href = "https://github.com/potykalov">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
-  <a src = "mailto:dmitriy.potykalov@gmail.com">
+  <a href = "mailto:dmitriy.potykalov@gmail.com">
     <img src="https://img.shields.io/badge/gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail Badge"/>
   </a>
-  <a src = "https://t.me/dmitriy_potykalov">
+  <a href = "https://t.me/dmitriy_potykalov">
     <img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/>
   </a>
   <a src = "https://www.linkedin.com/in/potykalov">
