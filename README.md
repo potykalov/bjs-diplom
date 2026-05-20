@@ -1,10 +1,3 @@
-<div id="badges" align = "center">
-  <a href = "https://github.com/potykalov"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href = "mailto:dmitriy.potykalov@gmail.com"><img src="https://img.shields.io/badge/gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail Badge"/></a>
-  <a href = "https://t.me/dmitriy_potykalov"><img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/></a>
-  <a href = "https://www.linkedin.com/in/potykalov"><img src="https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>
-</div>
-
 # Неткоин - сайт-биржа для крипто-стартапа
 
 <div align="center">
@@ -53,7 +46,17 @@
 
 ## Технологии
 
+**Основная работа:**
+
 - **JavaScript** — клиентская логика приложения.
+
+**Используется в проекте:**
+
+- **HTML5** — готовая разметка страниц;
+- **CSS3** — готовые стили интерфейса;
+- **Semantic UI** — UI-компоненты;
+- **Node.js** и **Express** — локальный сервер и API;
+- **lowdb** — локальная база данных.
 
 <br>
 
@@ -142,7 +145,74 @@ Ctrl + C
 
 ## Структура проекта
 
-Mermaid-схема
+```mermaid
+flowchart TD
+    classDef page fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1
+    classDef mycode fill:#fff8e1,stroke:#f9a825,color:#5d4037
+    classDef ready fill:#f3e5f5,stroke:#8e24aa,color:#4a148c
+    classDef server fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    classDef data fill:#eceff1,stroke:#607d8b,color:#263238
+
+    root["bjs-diplom"]
+
+    root --> public["public/"]
+    root --> routes["routes/"]
+    root --> index["index.js"]
+    root --> db["db.json"]
+
+    public --> pages["HTML-страницы"]
+    public --> scripts["JS-логика страниц"]
+    public --> api["api/"]
+    public --> styles["css/ и semantic/"]
+
+    pages --> loginHtml["login.html<br>страница входа"]
+    pages --> homeHtml["home.html<br>личный кабинет"]
+
+    scripts --> loginJs["loginPage.js<br>логика входа и регистрации"]
+    scripts --> homeJs["homePage.js<br>логика личного кабинета"]
+
+    api --> apiConnector["ApiConnector.js<br>запросы к API"]
+    api --> uiClasses["UI-классы<br>UserForm / MoneyManager / ProfileWidget<br>FavoritesWidget / RatesBoard / LogoutButton"]
+
+    routes --> userRoute["user.js<br>пользователь"]
+    routes --> moneyRoute["money.js<br>баланс и переводы"]
+    routes --> favoritesRoute["favorites.js<br>избранное"]
+    routes --> stocksRoute["stocks.js<br>курсы валют"]
+
+    index --> routes
+    routes --> db
+
+    loginHtml --> loginJs
+    homeHtml --> homeJs
+
+    loginJs --> apiConnector
+    homeJs --> apiConnector
+    loginJs --> uiClasses
+    homeJs --> uiClasses
+
+    apiConnector --> routes
+
+    class loginHtml,homeHtml,page page
+    class loginJs,homeJs mycode
+    class apiConnector,uiClasses,styles ready
+    class routes,index,userRoute,moneyRoute,favoritesRoute,stocksRoute server
+    class db data
+```
+
+**Легенда:**  
+🔵 HTML-страницы  
+🟡 моя основная реализация  
+🟣 готовые классы и стили проекта  
+🟢 серверная часть  
+⚪ локальная база данных
+
+**Легенда:**  
+🔵 HTML-страницы  
+🟡 моя основная реализация  
+🟣 готовые классы и стили проекта  
+🟢 серверная часть  
+⚪ данные и настройки  
+🟠 изображения и GIF для README
 
 <br>
 
@@ -189,15 +259,22 @@ Mermaid-схема
 
 ## Автор
 
-**Дмитрий Потыкалов**
+<div align="center">
+  <p>
+    <strong>Дмитрий Потыкалов</strong><br>
+    Frontend-разработчик
+  </p>
 
-Frontend-разработчик
-
-<br>
-
-<div id="badges" align = "center">
-  <a href = "https://github.com/potykalov"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href = "mailto:dmitriy.potykalov@gmail.com"><img src="https://img.shields.io/badge/gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail Badge"/></a>
-  <a href = "https://t.me/dmitriy_potykalov"><img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/></a>
-  <a src = "https://www.linkedin.com/in/potykalov"><img src="https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>
+  <a href="https://github.com/potykalov">
+    <img src="https://img.shields.io/badge/GitHub-профиль-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="mailto:dmitriy.potykalov@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-написать-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  </a>
+  <a href="https://t.me/dmitriy_potykalov">
+    <img src="https://img.shields.io/badge/Telegram-написать-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+  <a href="https://www.linkedin.com/in/potykalov">
+    <img src="https://img.shields.io/badge/LinkedIn-профиль-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
 </div>
