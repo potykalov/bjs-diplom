@@ -1,4 +1,7 @@
 <div id="badges" align = "center">
+  <a src = "https://github.com/potykalov">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
   <a src = "mailto:dmitriy.potykalov@gmail.com">
     <img src="https://img.shields.io/badge/gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail Badge"/>
   </a>
@@ -8,16 +11,17 @@
   <a src = "https://www.linkedin.com/in/potykalov">
     <img src="https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <br>
-  <img alt="GitHub License" src="https://img.shields.io/github/license/potykalov/tic-tac-toe-js">
 </div>
-
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Tests](https://img.shields.io/badge/tests-92%25-success)
 
 # Неткоин - сайт-биржа для крипто-стартапа
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+<div align="center">
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript">
+  <img src="https://img.shields.io/badge/status-completed-2ea44f?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License">
+</div>
+
+<br>
 
 **Неткоин** - учебное веб-приложение для управления внутренней валютой крипто-стартапа.  
 Пользователь может зарегистрироваться, войти в личный кабинет, посмотреть баланс, пополнить счёт, конвертировать валюту, перевести средства другому пользователю и управлять списком избранных получателей.
@@ -59,11 +63,6 @@
 ## Технологии
 
 - **JavaScript** — клиентская логика приложения.
-
-<br>
-
-## Структура проекта
-
 
 <br>
 
@@ -135,18 +134,51 @@ Ctrl + C
 
 ## Реализация
 
-В проекте реализована клиентская логика для взаимодействия готового интерфейса с серверным API.
+В рамках дипломной работы я реализовал клиентскую логику, которая связывает готовый интерфейс с серверным API.
 
-- `loginPage.js` отвечает за авторизацию и регистрацию;
-- `homePage.js` отвечает за личный кабинет пользователя;
-- реализован выход из личного кабинета;
-- подключено пополнение баланса;
-- подключена конвертация валют;
-- подключён перевод средств другому пользователю;
-- данные профиля обновляются после успешных операций с балансом;
-- курсы валют загружаются с сервера и обновляются автоматически;
-- список избранных пользователей синхронизируется со списком получателей для перевода;
-- ошибки сервера выводятся через готовые методы интерфейсных классов.
+- подключил авторизацию и регистрацию пользователя;
+- реализовал выход из личного кабинета;
+- настроил получение и отображение данных текущего пользователя;
+- подключил обновление курсов валют;
+- реализовал пополнение баланса;
+- реализовал конвертацию валют;
+- реализовал перевод средств другому пользователю;
+- подключил добавление и удаление пользователей из избранного;
+- настроил вывод сообщений об успешных действиях и ошибках;
+- синхронизировал список избранных пользователей со списком получателей для перевода.
+
+<br>
+
+## Структура проекта
+
+Mermaid-схема
+
+<br>
+
+## Интерфейс
+
+### Страница входа
+
+![Страница входа](docs/screenshots/login-page.png)
+
+### Личный кабинет
+
+![Личный кабинет](docs/screenshots/home-page.png)
+
+### Операции с балансом
+
+![Операции с балансом](docs/screenshots/money-actions.png)
+
+### Избранные пользователи
+
+![Избранные пользователи](docs/screenshots/favorites.png)
+
+<br>
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией MIT.  
+Подробнее см. файл [LICENSE](LICENSE).
 
 <br>
 
@@ -156,11 +188,21 @@ Ctrl + C
 
 Frontend-разработчик
 
-- **GitHub:** [@potykalov](https://github.com/potykalov)
-  
 <br>
 
-## 📄 Лицензия
-
-Проект распространяется под лицензией MIT.  
-Подробнее см. файл [LICENSE](LICENSE).
+<div id="badges" align = "center">
+  <a src = "https://github.com/potykalov">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+  <a src = "mailto:dmitriy.potykalov@gmail.com">
+    <img src="https://img.shields.io/badge/gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="GMail Badge"/>
+  </a>
+  <a src = "https://t.me/dmitriy_potykalov">
+    <img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Badge"/>
+  </a>
+  <a src = "https://www.linkedin.com/in/potykalov">
+    <img src="https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <br>
+  <img alt="GitHub License" src="https://img.shields.io/github/license/potykalov/tic-tac-toe-js">
+</div>
