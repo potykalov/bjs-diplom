@@ -31,8 +31,7 @@
 <br>
 
 <div align='center'>
-<img width='500' src='assets/login-page.jpg'>
-<img width='500' src='assets/home-page.jpg'>
+<img width='900' src='assets/preview.gif'>
 </div>
 
 <br>
@@ -159,19 +158,33 @@ Mermaid-схема
 
 ### Страница входа
 
-![Страница входа](docs/screenshots/login-page.png)
+<div align='center'>
+  <img width='700' src='assets/login-page.jpg'>
+</div>
+
+<br>
 
 ### Личный кабинет
 
-![Личный кабинет](docs/screenshots/home-page.png)
+<div align='center'>
+  <img width='700' src='assets/home-page.jpg'>
+</div>
+
+<br>
 
 ### Операции с балансом
 
-![Операции с балансом](docs/screenshots/money-actions.png)
+<div align='center'>
+  <img width='350' src='assets/money-actions.gif'>
+</div>
+
+<br>
 
 ### Избранные пользователи
 
-![Избранные пользователи](docs/screenshots/favorites.png)
+<div align='center'>
+  <img width='700' src='assets/favorites.gif'>
+</div>
 
 <br>
 
@@ -203,6 +216,4 @@ Frontend-разработчик
   <a src = "https://www.linkedin.com/in/potykalov">
     <img src="https://img.shields.io/badge/linkedin-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <br>
-  <img alt="GitHub License" src="https://img.shields.io/github/license/potykalov/tic-tac-toe-js">
 </div>
