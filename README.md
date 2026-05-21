@@ -1,4 +1,4 @@
-# 🪙 Неткоин - сайт-биржа для крипто-стартапа
+# 🪙 Неткоин — сайт-биржа для крипто-стартапа
 
 <div align="center">
   <a href="https://netcoin-exchange.onrender.com"><img src="https://img.shields.io/badge/▶_Открыть_демо-2ea44f?style=for-the-badge" alt="Открыть демо"></a>
@@ -12,23 +12,22 @@
   <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License">
 </div>
 
-<div class="nav" align="center">
-  <a href="#статус-проекта">Статус проекта</a> |
-  <a href="#функционал">Функционал</a> |
-  <a href="#технологии">Технологии</a> |
-  <a href="#установка">Установка</a> |
-  <a href="#локальный-запуск">Локальный запуск</a> |
-  <a href="тестовые-пользователи">Тестовые пользователи</a> |
-  <a href="#реализация">Реализация</a> |
-  <a href="#структура-проекта">Структура проекта</a> |
-  <a href="#ui-и-демонстрация">UI и демонстрация</a> |
-  <a href="#лицензия">Лицензия</a> |
-  <a href="#автор">Автор</a>
-</div>
+<br>
+
+<p align="center">
+  <a href="#функционал">Функционал</a> • 
+  <a href="#технологии">Технологии</a> • 
+  <a href="#установка-и-запуск">Установка и запуск</a> • 
+  <a href="#тестовые-пользователи">Тестовые пользователи</a>
+<br>  
+  <a href="#реализация">Реализация</a> • 
+  <a href="#структура-проекта">Структура проекта</a> • 
+  <a href="#ui-и-демонстрация">UI и демонстрация</a>
+</p>
 
 <br>
 
-> Демо может открываться чуть дольше при первом запуске — приложение размещено на бесплатном тарифе Render.
+> > Демо размещено на Render. Первый запуск может занять около минуты, если сервер был в спящем режиме.
 
 **Неткоин** - учебное веб-приложение для управления внутренней валютой крипто-стартапа.  
 Пользователь может зарегистрироваться, войти в личный кабинет, посмотреть баланс, пополнить счёт, конвертировать валюту, перевести средства другому пользователю и управлять списком избранных получателей.
@@ -38,7 +37,7 @@
 <br>
 
 <div align='center'>
-<img width='900' src='assets/preview.gif'>
+<img width='900' src='assets/preview.gif' alt="Демонстрация работы проекта">
 </div>
 
 <br>
@@ -82,7 +81,9 @@
 
 <br>
 
-## Установка
+## Установка и запуск
+
+### Установка
 
 1. Клонируйте репозиторий:
 
@@ -93,7 +94,7 @@ git clone https://github.com/potykalov/netcoin-exchange.git
 2. Перейдите в папку проекта:
 
 ```bash
-cd bjs-diplom
+cd netcoin-exchange
 ```
 
 3. Установите зависимости:
@@ -104,7 +105,7 @@ npm install
 
 <br>
 
-## Локальный запуск
+### Локальный запуск
 
 1. Запустите локальный сервер:
 
@@ -176,7 +177,7 @@ flowchart TD
     classDef server fill:#dcfce7,stroke:#16a34a,color:#14532d
     classDef data fill:#e5e7eb,stroke:#374151,color:#111827
 
-    root["bjs-diplom"]:::rootNode
+    root["netcoin-exchange"]:::rootNode
 
     root --> public["public/"]:::rootNode
     root --> routes["routes/"]:::server
@@ -241,7 +242,7 @@ flowchart TD
 ### Операции с балансом
 
 <div align='center'>
-  <img width='350' src='assets/money-actions.gif'>
+  <img width='400' src='assets/money-actions.gif'>
 </div>
 
 <br>
