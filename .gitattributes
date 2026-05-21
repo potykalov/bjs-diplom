@@ -1,0 +1,12 @@
+assets/** linguist-vendored
+img/** linguist-vendored
+md/** linguist-vendored
+routes/** linguist-vendored
+public/** linguist-vendored
+index.js linguist-vendored
+db.json linguist-vendored
+.eslintrc.json linguist-vendored
+.babelrc linguist-vendored
+
+public/js/loginPage.js -linguist-vendored
+public/js/homePage.js -linguist-vendored
