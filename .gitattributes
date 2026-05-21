@@ -1,4 +1,5 @@
 *.css linguist-vendored
+*.html linguist-vendored
 assets/** linguist-vendored
 img/** linguist-vendored
 public/img/** linguist-vendored
