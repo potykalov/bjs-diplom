@@ -73,7 +73,7 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/potykalov/bjs-diplom.git
+git clone https://github.com/potykalov/netcoin-exchange.git
 ```
 
 2. Перейдите в папку проекта:
