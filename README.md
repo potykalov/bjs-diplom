@@ -1,12 +1,20 @@
 # Неткоин - сайт-биржа для крипто-стартапа
 
 <div align="center">
+  <a href="https://bjs-diplom-kegf.onrender.com"><img src="https://img.shields.io/badge/▶_Открыть_демо-2ea44f?style=for-the-badge" alt="Открыть демо"></a>
+</div>
+
+<br>
+
+<div align="center">
   <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript">
   <img src="https://img.shields.io/badge/status-completed-2ea44f?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License">
 </div>
 
 <br>
+
+> Демо может открываться чуть дольше при первом запуске — приложение размещено на бесплатном тарифе Render.
 
 **Неткоин** - учебное веб-приложение для управления внутренней валютой крипто-стартапа.  
 Пользователь может зарегистрироваться, войти в личный кабинет, посмотреть баланс, пополнить счёт, конвертировать валюту, перевести средства другому пользователю и управлять списком избранных получателей.
@@ -247,16 +255,8 @@ flowchart TD
     Frontend-разработчик
   </p>
 
-  <a href="https://github.com/potykalov">
-    <img src="https://img.shields.io/badge/GitHub-профиль-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-  <a href="mailto:dmitriy.potykalov@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-написать-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>
-  <a href="https://t.me/dmitriy_potykalov">
-    <img src="https://img.shields.io/badge/Telegram-написать-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>
-  <a href="https://www.linkedin.com/in/potykalov">
-    <img src="https://img.shields.io/badge/LinkedIn-профиль-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
+  <a href="https://github.com/potykalov"><img src="https://img.shields.io/badge/GitHub-профиль-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="mailto:dmitriy.potykalov@gmail.com"><img src="https://img.shields.io/badge/Gmail-написать-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
+  <a href="https://t.me/dmitriy_potykalov"><img src="https://img.shields.io/badge/Telegram-написать-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+  <a href="https://www.linkedin.com/in/potykalov"><img src="https://img.shields.io/badge/LinkedIn-профиль-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </div>
