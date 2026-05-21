@@ -1,7 +1,7 @@
 # Неткоин - сайт-биржа для крипто-стартапа
 
 <div align="center">
-  <a href="https://bjs-diplom-kegf.onrender.com"><img src="https://img.shields.io/badge/▶_Открыть_демо-2ea44f?style=for-the-badge" alt="Открыть демо"></a>
+  <a href="https://netcoin-exchange.onrender.com"><img src="https://img.shields.io/badge/▶_Открыть_демо-2ea44f?style=for-the-badge" alt="Открыть демо"></a>
 </div>
 
 <br>
