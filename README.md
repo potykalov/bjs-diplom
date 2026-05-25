@@ -8,13 +8,13 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript">
-  <img src="https://img.shields.io/badge/status-completed-2ea44f?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License">
 </div>
 
 <br>
 
 <p align="center">
+  <a href="#информация-о-проекте">Информация</a> •
   <a href="#функционал">Функционал</a> •
   <a href="#технологии">Технологии</a> •
   <a href="#установка-и-запуск">Установка и запуск</a> •
@@ -42,9 +42,13 @@
 
 <br>
 
-## Статус проекта
+## Информация о проекте
 
-✅ Завершён как учебный дипломный проект.
+- **Год:** 2026
+- **Статус:** завершён
+- **Тип:** учебный дипломный проект
+- **Курс:** «Основы JavaScript», Нетология
+- **Роль:** frontend-разработчик
 
 <br>
 
